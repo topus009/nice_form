@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="24px" viewBox="0 0 18 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>CD537241-0462-4A39-8B7E-AC8B0A2B3B1E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 10 0 18 8 18 24 0 24"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="input/file_multiupload" transform="translate(-20.000000, -35.000000)">
+            <g id="Group-5" transform="translate(20.000000, 35.000000)">
+                <g id="icon/file">
+                    <g id="file_icon">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Rectangle-2" fill="#DDDDDD" xlink:href="#path-1"></use>
+                        <path d="M10.0277193,0 C10.0277193,0 9.96535084,8.00379507 10.0277193,7.99999865 C10.0900878,7.99620223 18,7.99999865 18,7.99999865 L18,0 L10.0277193,0 Z" id="Path-11" fill="#FFFFFF" opacity="0.5" mask="url(#mask-2)"></path>
+                        <path d="M11.0242544,8 C11.0242544,8 10.969682,9.00047438 11.0242544,8.99999983 C11.0788268,8.99952528 18,8.99999983 18,8.99999983 L18,8 L11.0242544,8 Z" id="Path-11-Copy" fill="#333333" opacity="0.0565217406" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+/* ================= ТИП РАБОТЫ ================================= */
+.change_work_type {
+  background-color: transparent;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  text-align: center;
+  z-index: 999;
+  font-size: calc(100vh/30);
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(128,128,128,0.54) 20%, rgba(128,128,128,0.6) 50%, rgba(128,128,128,0.54) 80%, rgba(255,255,255,0.5) 100%);
+}
+.change_work_type .list_block {
+  width: 60vw;
+  margin: 0 auto;
+}
+.change_work_type p {
+  background-color: rgba(241, 242, 244, 0.9);
+  margin: 0;
+  height: calc(100vh/13);
+  vertical-align: middle;
+  line-height: calc(100vh/13);
+}
+.change_work_type p:first-child {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.change_work_type p:last-child {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.change_work_type p:hover {
+  background-color: #FFD012;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* ================= КОНЕЦ - ТИП РАБОТЫ  ========================= */

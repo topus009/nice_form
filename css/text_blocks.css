@@ -1,0 +1,31 @@
+/* ================= ТИП РАБОТЫ ============================== */
+.item_ div:first-child {
+    margin-bottom: 2px;
+}
+.main-type-1 .btn-white {
+    float: right;
+    margin: -12px -1px;
+}
+.main-type-1 input {
+    width: 69%;
+}
+/* ================= КОНЕЦ - ТИП РАБОТЫ ====================== */
+/* ================= БЕЗЫМЯННЫЙ =============================== */
+.main-type-2 {
+    color: #858585;
+    padding: 20px 10px 20px 20px;
+}
+.main-type-2 .type-2-content {
+    margin-bottom: 0 !important;
+}
+/* ================= КОНЕЦ - БЕЗЫМЯННЫЙ ======================= */
+/* ================= ТЕКСТ ЗАДАНИЯ ============================ */
+.main-task {
+    /*min-height: 172px;*/
+}
+.main-task .item-task-text {
+    font-size: 14px;
+    line-height: 1.43;
+    padding-right: 10px;
+}
+/* ================= КОНЕЦ - ТЕКСТ ЗАДАНИЯ ==================== */

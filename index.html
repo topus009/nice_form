@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>Форма</title>
+   <link href="./css/styles.css" rel="stylesheet">
+
+   <link href="./css/contractor.css" rel="stylesheet">
+   <link href="./css/files.css" rel="stylesheet">
+   <link href="./css/checkbox.css" rel="stylesheet">
+   <link href="./css/datepicker01.css" rel="stylesheet">
+   <link href="./css/text_blocks.css" rel="stylesheet">
+   <link href="./css/change_work_type.css" rel="stylesheet">
+   <link href="./css/datepicker.css" rel="stylesheet">
+   <link href="./css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+<!-- ============== RECTANGLE ==================================== -->
+   <div class="rectangle">
+<!-- ============== CONTENT ====================================== -->
+      <div class="content">
+         <span class="title">Новый заказ</span>
+         <div class="horisontal"></div>
+<!-- ============== MAIN ========================================= -->
+         <div class="main">
+<!-- ============== ТИП РАБОТЫ =================================== -->
+            <form class="main-type-1 item_">
+               <label class="item-title"> ТИП РАБОТЫ </label>
+               <input id="item-content" class="item-content" placeholder="">
+               <div class="btn-white" onclick="change_work()"> ИЗМЕНИТЬ </div>
+               <div id="work_type_block" class="change_work_type hide">
+                 <div class="list_block">
+                   <p>Контрольная</p>
+                   <p>Курсовая</p>
+                   <p>Диплом</p>
+                   <p>Реферат</p>
+                   <p>Решение задач</p>
+                   <p>Чертеж</p>
+                   <p>Эссе</p>
+                   <p>Отчёт по практике</p>
+                   <p>Перевод</p>
+                   <p>Диссертация</p>
+                   <p>Доклад</p>
+                   <p>Лабораторная</p>
+                   <p>Презентация</p>
+                 </div>
+               </div>
+            </form>
+<!-- ============== КОНЕЦ - ТИП РАБОТЫ =========================== -->
+<!-- ============== DATE PICKER ================================== -->
+            <div class="main-right">
+               <div class="item-title"> СРОК ВЫПОЛНЕНИЯ </div>
+               <div class="item-content"></div>
+               <img id="calendar-trigger" src="./src/btn-calendar.svg" />
+               <div id="datepicker"></div>
+            </div>
+<!-- ============== КОНЕЦ - DATE PICKER ========================== -->
+<!-- ============== БЕЗЫМЯННЫЙ =================================== -->
+            <form class="main-type-2 item_">
+               <input class="type-2-content item-content" placeholder="ТИП РАБОТЫ">
+            </form>
+<!-- ============== КОНЕЦ - БЕЗЫМЯННЫЙ =========================== -->
+<!-- ============== ЗАГОЛОВОК ==================================== -->
+            <form class="main-title item_">
+               <label for="item-content" class="item-title"> ЗАГОЛОВОК </label>
+               <input id="item-content" class="item-content" placeholder="">
+            </form>
+<!-- ============== КОНЕЦ - ЗАГОЛОВОК =========================== -->
+<!-- ============== ТЕКСТ ЗАДАНИЯ =============================== -->
+            <form class="main-task item_">
+               <label for="item-task-text" class="item-title"> ЗАДАНИЕ </label>
+               <textarea id="item-task-text" class="item-task-text" placeholder=""></textarea>
+            </form>
+<!-- ============== КОНЕЦ - ТЕКСТ ЗАДАНИЯ ====================== -->
+<!-- ============== ПОДСКАЗКА ================================== -->
+            <div class="main-right-note"> Сообщите нам всё, что необходимо знать для успешного выполнения работы
+            </div>
+<!-- ============== КОНЕЦ - ПОДСКАЗКА ========================== -->
+<!-- ============== ЗАГРУЗКА ФАЙЛОВ ============================ -->
+            <div id="file_container" class="main-file-block item_" onclick="remove_file()">
+               <div class="item-title">ФАЙЛЫ (ПРИ НАЛИЧИИ)</div>
+<!-- ============== ФАЙЛ 1 ===================================== -->
+                    <!-- ТУТ БУДУТ ФАЙЛЫ -->
+<!-- =========================================================== -->
+               <div id="button_block" class="button-block">
+                  <button class="btn-white" onclick="fake_click()"> ДОБАВИТЬ ФАЙЛЫ </button>
+               </div>
+            </div>
+<!-- ============== КОНЕЦ - ЗАГРУЗКА ФАЙЛОВ ==================== -->
+<!-- ============== АНТИПЛАГИАТ ================================ -->
+            <div class="main-antiplagiat item_2">
+               <div class="item-title"> АНТИПЛАГИАТ </div>
+               <div class="check-block">
+                  <input type="radio" name="anti" id="anti_1" />
+                  <label for="anti_1">не требуется</label>
+                  <input type="radio" name="anti" id="anti_2" />
+                  <label for="anti_2">требуется</label>
+               </div>
+            </div>
+<!-- ============== КОНЕЦ - АНТИПЛАГИАТ ======================== -->
+<!-- ============== ЗАКАЗ УВИДЯТ =============================== -->
+            <div class="main-see item_2">
+               <div class="item-title"> ЗАКАЗ УВИДЯТ </div>
+               <div class="check-block">
+                  <input type="radio" name="see" id="see_1" />
+                  <label for="see_1">все исполнители</label>
+                  <input type="radio" name="see" id="see_2" />
+                  <label for="see_2">конкретный исполнитель</label>
+               </div>
+            </div>
+<!-- ============== КОНЕЦ - ЗАКАЗ УВИДЯТ ======================= -->
+<!-- ============== ИСПОЛНИТЕЛЬ ================================ -->
+            <div class="main-contractor item_2">
+               <div class="main-contractor-title"> ВЫБРАННЫЙ ИСПОЛНИТЕЛЬ </div>
+               <span class="contractor">
+<!-- ============== ЛОГО ИСПОЛНИТЕЛЯ =========================== -->
+                 <img src="./src/man-13.png" />
+<!-- ============== ИНФО об ИСПОЛНИТЕЛЕ ======================== -->
+                    <div class="contractor-info">
+                      <div class="item-title">
+                        ИСПОЛНИТЕЛЬ
+                      </div>
+                      <div class="contractor-name">
+                        Иннокентий
+                      </div>
+                      <div class="item-title">
+                        ID 1234567890
+                      </div>
+                    </div>
+<!-- ============== КОНЕЦ - ИНФО об ИСПОЛНИТЕЛЕ ================ -->
+<!-- ============== ПРОГРЕСС =================================== -->
+                    <div class="contractor-progress">
+                      <span class="rating">рейтинг:
+                        <span class="rating-value">2890</span>
+                      </span>
+                      <span class="review">отзывы:
+                        <span class="review-value">
+                          <span class="plus">+<span>200</span></span>
+                          <span class="zero">8</span>
+                          <span class="minus">-<span>1</span></span>
+                       </span>
+                       </span>
+                       <div class="made"> выполнено заказов:
+                         <span class="made-value">22890</span>
+                       </div>
+                    </div>
+<!-- ============== КОНЕЦ - ПРОГРЕСС ========================== -->
+                </span>
+            </div>
+<!-- ============== КОНЕЦ - ИСПОЛНИТЕЛЬ ======================= -->
+      </div>
+<!-- ============== КОНЕЦ - MAIN ============================== -->
+      <div class="horisontal"></div>
+      <button class="order btn-yellow">РАЗМЕСТИТЬ ЗАКАЗ</span>
+   </div>
+<!-- ============== КОНЕЦ - CONTENT =========================== -->
+   </div>
+<!-- ============== КОНЕЦ - RECTANGLE ========================= -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/datepicker.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+</html>

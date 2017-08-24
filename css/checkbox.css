@@ -1,0 +1,17 @@
+/* ================= ЧЕКБОКСЫ ================================= */
+.main-antiplagiat {
+    margin-top: 30px;
+}
+.check-block {
+    margin-top: 10px;
+    display: table;
+}
+.check-block label {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 165px;
+    padding-left: 10px;
+    line-height: 1.33;
+}
+/* ================= КОНЕЦ - ЧЕКБОКСЫ ========================= */
